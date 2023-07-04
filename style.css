@@ -1,0 +1,136 @@
+*{
+
+}
+body{
+  font-family: 'Poppins', sans-serif;
+}
+.gradient-background {
+  background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.icon-square {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.75rem;
+}
+
+.profile-img {
+  width: 45%;
+    transform: rotate(25deg);
+    position: relative;
+    left: 20%;
+}
+.container{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  height:100vh;
+  align-items: center;
+  margin-top: -6rem;
+}
+.nav-link{
+  color:white;
+  font-size: 20px;
+}
+.title{
+  font-weight: bolder;
+  font-size: 65px;
+}
+.container .row .h1 h1{
+  font-size: 45px;
+  color:white;
+  font-weight: bold;
+  text-align: center;
+  align-self: center;
+  margin-bottom: 5rem;
+  width:50%;
+  margin-left: 10rem;
+}
+.container .row button{
+  height:4rem;
+  width:10rem;
+  background-color: black;
+  color:white;
+  border-radius: 1rem;
+  border:none;
+  padding: 0.5rem 1rem;
+    font-size: 1rem;
+}
+.container .row .button{
+  margin-left: 9rem;
+}
+.container .row i{
+  font-size: 25px;
+}
+.container .row .div1{
+  margin-top: 7rem;
+}
+#features {
+  padding: 7% 15%;
+}
+.feature-box {
+  padding: 5%;
+}
+svg:not(:root).svg-inline--fa {
+  overflow: visible;
+}
+.svg-inline--fa.fa-w-16 {
+  width: 1em;
+}
+.feature-title {
+  font-weight: 900;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat';
+}
+.h3, h3 {
+  font-size: 1.75rem;
+}
+p {
+  color: #8f8f8f;
+}
+.icon {
+  color: #ff4c68;
+  margin-bottom: 1rem;
+}
+.profile-img-dog{
+  border-radius: 50%;
+    height: 100px;
+    align-self: center;
+}
+.py-5 {
+  padding-top: 3rem!important;
+}
+@media (max-width:680px){
+  .container{
+    display: block;
+  }
+  .h1 h1{
+    font-size: 1rem;
+    text-align: left;
+    margin-top: 10rem;
+    margin-left:-25rem;
+  }
+  .row .profile-img{
+    width:10rem;
+    height:10rem;
+    margin-top:-50rem;
+    margin-left: -5rem;
+    transform: rotate(15deg);
+  }
+}
